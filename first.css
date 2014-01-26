@@ -1,0 +1,60 @@
+/* CSS declarations go here */
+body{
+	background: #ededed;
+	font-family: Verdana;
+}
+.menu-bar{
+	background: #333;
+	padding: 20px 10px;
+	height: 30px;
+}
+ul.nav{
+	margin:0;
+	padding:0;
+}
+ul.nav li{
+	list-style: none;
+	float: left;
+	margin: 0 20px 0 0;
+}
+ul.nav li a{
+	color: #fff;
+	padding:10px 20px;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+ul.nav li a:hover{
+	color: #ccc;
+	
+}
+.site-name{
+	padding: 0 20px;
+}
+.container{
+	background: #fff;
+	width: 80%;
+	margin: 30px auto;
+	border-radius: 6px;
+	padding: 20px 0;
+	border: 1px solid #ccc;
+}
+.content{
+	clear: both;
+	padding: 10px 20px;
+}
+.submit-container{
+	width: 60%;
+	margin: 50px auto;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	text-align: center;
+	padding: 10px 5px;
+}
+.display-container{
+	width: 60%;
+	margin: 50px auto;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	
+	padding: 10px 5px;
+}

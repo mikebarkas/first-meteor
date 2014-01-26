@@ -1,0 +1,69 @@
+<head>
+  <title>first</title>
+</head>
+
+<body>
+ <div class="container">
+	<div class="site-name">
+		<h1>First Meteor</h1>
+	</div>
+	<div class="menu-bar">
+		{{> nav}}
+	</div>
+  
+ 	<div class="content">
+  		{{renderPage}}
+  	</div>
+
+ </div> 
+</body>
+
+
+<!-- Templates -->
+<template name="nav">
+	<ul class="nav">
+	<li><a href="/">Home</a></li>
+	<li><a href="/two">Two</a></li>
+	<li><a href="/enter-place">Enter Place</a></li>
+	<li><a href="/all-places">Show Places</a></li>
+	</ul>
+</template>
+
+<template name="enter_place">
+	<div class="submit-container">
+		<p>Enter a city, state, or location in the form below.</p>
+		<input type="text" class="place_data">
+		<button class="submit_place">Submit</button>
+	</div>
+</template>
+
+<template name="all_places">
+	<div class="display-container">
+	<ul>
+	{{#each show_places}}
+	<li>{{place_data}}</li>
+	{{/each}}
+	</ul>
+</div>
+</template>
+
+<template name="home">
+  <h1>Home Page</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</template>
+
+<template name="two">
+  <h1>Page Two</h1>
+  <p>Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+
+  <h3>Another Paragraph</h3>
+  <p>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</template>
